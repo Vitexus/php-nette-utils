@@ -1,0 +1,21 @@
+From: =?utf-8?q?David_Pr=C3=A9vot?= <taffit@debian.org>
+Date: Sun, 11 Aug 2024 18:37:21 +0200
+Subject: Workaround dh_phpcomposer limitations
+
+---
+ composer.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/composer.json b/composer.json
+index 74bd618..7885690 100644
+--- a/composer.json
++++ b/composer.json
+@@ -15,7 +15,7 @@
+ 		}
+ 	],
+ 	"require": {
+-		"php": "8.0 - 8.4"
++		"php": "8.*"
+ 	},
+ 	"require-dev": {
+ 		"nette/tester": "^2.5",

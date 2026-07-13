@@ -1,0 +1,126 @@
+php-nette-utils (4.0.6-1) unstable; urgency=medium
+
+  [ David Grudl ]
+  * exception: use natural explanatory style
+  * tests: improved descriptions
+  * added FileSystem::resolvePath() [Closes #308]
+  * added ShouldNotHappenException
+  * added Helpers::IsWindows
+  * Image: catches all errors during saving
+
+  [ David Prévot ]
+  * Update Standards-Version to 4.7.2
+
+ -- David Prévot <taffit@debian.org>  Mon, 31 Mar 2025 22:27:34 +0200
+
+php-nette-utils (4.0.5-1) unstable; urgency=medium
+
+  [ David Grudl ]
+  * support for PHP 8.4
+  * Image: GD extension detection added
+  * Mapper is deprecated
+  * added Iterables::toIterator()
+  * added Iterables::memoize()
+  * added Arrays::mapWithKeys() & Iterables::mapWithKeys()
+  * Strings::matchAll(): added option 'lazy'
+
+  [ David Prévot ]
+  * Update Standards-Version to 4.7.0
+
+ -- David Prévot <taffit@debian.org>  Sun, 11 Aug 2024 18:33:05 +0200
+
+php-nette-utils (4.0.4-1) unstable; urgency=medium
+
+  [ David Grudl ]
+  * added Iterables
+
+ -- David Prévot <taffit@debian.org>  Wed, 17 Jan 2024 22:42:33 +0100
+
+php-nette-utils (4.0.3-1) unstable; urgency=medium
+
+  [ David Grudl ]
+  * added ImageColor, replaces Image::rgb()
+
+ -- David Prévot <taffit@debian.org>  Mon, 30 Oct 2023 13:39:34 +0100
+
+php-nette-utils (4.0.2-1) unstable; urgency=medium
+
+  [ David Grudl ]
+  * Strings::length() uses mbstring, iconv and then utf8_decode [Closes: #299]
+
+ -- David Prévot <taffit@debian.org>  Wed, 20 Sep 2023 20:38:25 +0530
+
+php-nette-utils (4.0.1-1) unstable; urgency=medium
+
+  [ David Grudl ]
+  * added Image::isTypeSupported()
+  * support for PHP 8.3
+
+ -- David Prévot <taffit@debian.org>  Wed, 02 Aug 2023 13:46:47 +0200
+
+php-nette-utils (4.0.0-1) unstable; urgency=medium
+
+  * New major release, uploaded to unstable
+
+ -- David Prévot <taffit@debian.org>  Thu, 02 Feb 2023 14:04:14 +0100
+
+php-nette-utils (4.0.0~rc3-1) experimental; urgency=medium
+
+  [ David Grudl ]
+  * New RC
+
+ -- David Prévot <taffit@debian.org>  Mon, 23 Jan 2023 11:37:15 +0100
+
+php-nette-utils (4.0.0~rc1-1) experimental; urgency=medium
+
+  [ David Grudl ]
+  * requires PHP 8.0
+
+  [ David Prévot ]
+  * Revert "Track version 3 for now (Bookworm?)"
+
+ -- David Prévot <taffit@debian.org>  Sat, 14 Jan 2023 14:03:59 +0100
+
+php-nette-utils (3.2.9~rc1-1) experimental; urgency=medium
+
+  * Upload RC to experimental
+
+  [ David Prévot ]
+  * Track version 3 for now (Bookworm?)
+  * Update standards version to 4.6.2, no changes needed.
+
+ -- David Prévot <taffit@debian.org>  Sat, 14 Jan 2023 12:30:53 +0100
+
+php-nette-utils (3.2.8-1) unstable; urgency=medium
+
+  [ David Grudl ]
+  * private constants are PascalCase
+  * Image: added extensionToType()
+  * Image::detectTypeFromFile & detectTypeFromString returns width & height
+  * Image::clone() uses PNG format because GD2 is disabled since libgd 2.3.3
+  * support for PHP 8.2
+
+  [ David Prévot ]
+  * Mark package as Multi-Arch: foreign
+
+ -- David Prévot <taffit@debian.org>  Thu, 15 Sep 2022 12:02:25 +0200
+
+php-nette-utils (3.2.7-2) unstable; urgency=medium
+
+  * Upload to unstable after NEW processing
+  * Update Standards-Version to 4.6.1
+
+ -- David Prévot <taffit@debian.org>  Sat, 09 Jul 2022 13:33:39 +0200
+
+php-nette-utils (3.2.7-1) experimental; urgency=medium
+
+  [ David Grudl ]
+  * replaced ecs.php with ncs
+
+ -- David Prévot <taffit@debian.org>  Sat, 12 Feb 2022 14:11:40 -0400
+
+php-nette-utils (3.2.6-1) experimental; urgency=low
+
+  * Initial release (php-nette-schema dependency)
+
+ -- David Prévot <taffit@debian.org>  Sun, 02 Jan 2022 17:42:31 -0400

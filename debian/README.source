@@ -1,0 +1,5 @@
+We are merging the unsigned upstream tags as upstream,
+instead of using the tarball that doesn’t ship tests.
+
+# Example to import the latest upstream version
+gbp import-orig --uscan

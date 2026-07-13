@@ -1,0 +1,23 @@
+Source: php-nette-utils
+Section: php
+Priority: optional
+Maintainer: Debian PHP PEAR Maintainers <pkg-php-pear@lists.alioth.debian.org>
+Uploaders: David Prévot <taffit@debian.org>
+Build-Depends: debhelper-compat (= 13), dh-sequence-phpcomposer, phpab
+Standards-Version: 4.7.2
+Homepage: https://doc.nette.org/en/utils
+Vcs-Git: https://salsa.debian.org/php-team/pear/php-nette-utils.git
+Vcs-Browser: https://salsa.debian.org/php-team/pear/php-nette-utils
+Rules-Requires-Root: no
+
+Package: php-nette-utils
+Multi-Arch: foreign
+Architecture: all
+Depends: ${misc:Depends}, ${phpcomposer:Debian-require}
+Suggests: ${phpcomposer:Debian-suggest}
+Replaces: ${phpcomposer:Debian-replace}
+Breaks: ${phpcomposer:Debian-conflict}, ${phpcomposer:Debian-replace}
+Provides: ${phpcomposer:Debian-provide}
+Description: set of classes for everyday use - Nette component
+ lightweight utilities for string and array manipulation, image handling, safe
+ JSON encoding/decoding, validation, slug or strong password generating etc.
